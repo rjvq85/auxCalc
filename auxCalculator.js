@@ -69,13 +69,13 @@ $(document).ready(
             } else {
 
                 if (calcModeIsQuantity) {
-                    mt.text(eval(qt + '*' + specimen));
+                    mt.text(math.eval(qt * specimen));
                 } else {
-                    var evaluation = (eval(qt + '/' + specimen));
+                    var evaluation = math.eval(qt/specimen);
 
                     // Calculating quantity, should be a whole number
                     if (isWholeNumber(evaluation)) {
-                        mt.text(eval(qt + '/' + specimen));
+                        mt.text(evaluation);
                     } else {
                         mt.text('');
                     }
