@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="auxCalculator.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="calcAuxModeSelect">
+    <div class="calcAuxModeButtons">
+        <span class="calcAuxRadioButtons">
+            <input type="radio" checked="checked" name="radiobtns">
+            <label>Quantidade</label>
+        </span>
+        <span class="calcAuxRadioButtons">
+            <input type="radio" name="radiobtns">
+            <label>Montante</label>
+        </span>
+    </div>
+</div>
+<div class="calcAuxMain">
+    <div id="headers">
+        <table id="bills" width="100%" style="table-layout: fixed">
+            <tbody>
+            <tr>
+                <th>Espécie</th>
+                <th>Quantidade</th>
+                <th>Montante</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="body">
+        <table width="100%" style="table-layout: fixed">
+            <tbody>
+            <tr class="calcAuxBillsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">5.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxBillsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">10.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxBillsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">15.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxBillsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">20.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxSumBillsRow">
+                <td>
+                </td>
+                <td>
+                    <div>
+                        <span class="calcAuxSumLabel">Total de Notas</span>
+                    </div>
+                </td>
+                <td class="calcAuxSumValueCell">
+                    <span class="calcAuxBillsSumValueLabel"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxCoinsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">0.25</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxCoinsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">0.5</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxCoinsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">1.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxCoinsRow">
+                <td class="calcAuxSpecimenCell">
+                    <span class="calcAuxSpecimenLabel">2.00</span>
+                </td>
+                <td class="calcAuxInputCell">
+                    <input type="text" class="calcAuxInput" size="11">
+                </td>
+                <td class="calcAuxTextCell">
+                    <span class="calcAuxText"></span>
+                </td>
+            </tr>
+            <tr class="calcAuxSumCoinsRow">
+                <td>
+                </td>
+                <td>
+                    <div>
+                        <span class="calcAuxSumLabel">Total de Notas</span>
+                    </div>
+                </td>
+                <td class="calcAuxSumValueCell">
+                    <span class="calcAuxBillsSumValueLabel"></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
